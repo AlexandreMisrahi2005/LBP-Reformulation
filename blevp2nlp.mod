@@ -1,12 +1,12 @@
-param Nmax integer;
-param Qmax integer;
-param Mmax integer;
-param Pmax integer;
+param n integer;
+param q integer;
+param m integer;
+param p integer;
 
-set N := 1..Nmax;
-set Q := 1..Qmax;
-set M := 1..Mmax;
-set P := 1..Pmax;
+set N := 1..n;
+set Q := 1..q;
+set M := 1..m;
+set P := 1..p;
 
 param c{N};
 param d{Q};

@@ -1,7 +1,7 @@
-param Nmax 2;
-param Qmax 2;
-param Mmax 1;
-param Pmax 1;
+param n 2;
+param q 2;
+param m 1;
+param p 1;
 
 param a := 1 0;
 param b := 1 2;
