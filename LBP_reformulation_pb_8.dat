@@ -1,0 +1,30 @@
+param Nmax 3;
+param Qmax 4;
+param Mmax 2;
+param Pmax 2;
+
+param a := 1 0 2 0;
+param b := 1 10 2 0;
+param c := 1 -3 
+		   2  -4
+		   3  0;
+param d := 1  0 
+		   2  0
+		   3  0
+		   4  0;
+param e := 1 0 
+		   2 0
+		   3 0;
+param f := 1 -2 
+		   2  3
+		   3  0
+		   4  0;
+param A : 1 2 3:= 
+1 		  1 1 0
+2 		  2 -1 1;
+param B : 1 2 3:= 
+1 		  -1 2 0
+2         1 1 0;
+param C : 1 2 3 4:= 
+1 -1 0 -1 0
+2 0 -1 0 -1;

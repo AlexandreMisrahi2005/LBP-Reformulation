@@ -1,0 +1,21 @@
+param Nmax 2;
+param Qmax 2;
+param Mmax 1;
+param Pmax 1;
+
+param a := 1 0;
+param b := 1 2;
+param c := 1 -1 
+		   2  0;
+param d := 1 -1 
+		   2  0;
+param e := 1 0 
+		   2 0;
+param f := 1 1 
+		   2 0;
+param A : 1 2:= 
+1 1 1;
+param B : 1 2:= 
+1 1 0;
+param C : 1 2:= 
+1 -1 1;
