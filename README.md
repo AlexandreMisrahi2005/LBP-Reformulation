@@ -14,3 +14,14 @@ $$
 \end{cases}
 \end{equation}
 $$
+
+Solver statuses according to the [AMPL book](https://ampl.com/wp-content/uploads/Chapter-14-Interactions-with-Solvers-AMPL-Book.pdf):
+
+| Message    | Interpretation                                          |
+|------------|---------------------------------------------------------|
+| solved     | optimal solution found                                  |
+| solved?    | optimal solution indicated, but error likely            |
+| infeasible | constraints cannot be satisfied                         |
+| unbounded  | objective can be improved without limit                 |
+| limit      | stopped by a limit that you set (such as on iterations) |
+| failure    | stopped by an error condition in the solver             |
