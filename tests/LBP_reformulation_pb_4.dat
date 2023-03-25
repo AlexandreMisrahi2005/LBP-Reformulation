@@ -1,21 +1,30 @@
-param n 2;
-param q 2;
-param m 1;
-param p 1;
-
-param a := 1 0;
-param b := 1 2;
-param c := 1 -1 
-		   2  0;
-param d := 1 -1 
-		   2  0;
-param e := 1 0 
-		   2 0;
-param f := 1 1 
-		   2 0;
-param A : 1 2:= 
-1 1 1;
-param B : 1 2:= 
-1 1 0;
-param C : 1 2:= 
-1 -1 1;
+param lambda := 2
+;
+param : n m :=
+1 2 1
+2 2 1
+;
+param c :=
+1 1 1 -1
+1 1 2 0
+1 2 1 -1
+1 2 2 0
+2 1 1 0
+2 1 2 0
+2 2 1 1
+2 2 2 0
+;
+param A :=
+1 1 1 1 1
+1 1 1 2 1
+1 2 1 1 0 # by default for LBPs
+1 2 1 2 0 # by default for LBPs
+2 1 1 1 1
+2 1 1 2 0
+2 2 1 1 -1
+2 2 1 2 1
+;
+param b :=
+1 1 2
+2 1 0
+;
