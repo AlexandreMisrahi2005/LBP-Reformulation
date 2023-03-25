@@ -17,8 +17,9 @@ param c :=
 param A :=
 1 1 1 1 1
 1 1 1 2 1
-1 2 1 1 0 # by default for LBPs
-1 2 1 2 0 # by default for LBPs
+# optional:
+# 1 2 1 1 0 by default for LBPs
+# 1 2 1 2 0 by default for LBPs
 2 1 1 1 1
 2 1 1 2 0
 2 2 1 1 -1
