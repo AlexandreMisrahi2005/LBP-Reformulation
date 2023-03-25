@@ -15,6 +15,12 @@ $$
 \end{equation}
 $$
 
+To run the project with test instances:<br>
+```python3 blevp2nlp.py [path to AMPL executable] -t```
+
+To run the project with an AMPL-formatted ".dat" file:<br>
+```python3 blevp2nlp.py [path to AMPL executable] [path to '.dat' file]```
+
 Solver statuses according to the [AMPL book](https://ampl.com/wp-content/uploads/Chapter-14-Interactions-with-Solvers-AMPL-Book.pdf):
 
 | Message    | Interpretation                                          |
