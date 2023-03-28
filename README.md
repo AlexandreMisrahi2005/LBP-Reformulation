@@ -15,7 +15,7 @@ $$
 \end{equation}
 $$
 
-To run the project, please check the AMPL executable's path should be in the system PATH. We use python <br>
+To run the project, the AMPL executable's path should be in the system PATH. We use python <br>
 
 To run the project with test instances:<br>
 ```python3 blevp2nlp.py -t```
