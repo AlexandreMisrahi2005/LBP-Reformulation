@@ -15,11 +15,16 @@ $$
 \end{equation}
 $$
 
+To run the project, please check the AMPL executable's path should be in the system PATH. We use python <br>
+
 To run the project with test instances:<br>
-```python3 blevp2nlp.py [path to AMPL executable] -t```
+```python3 blevp2nlp.py -t```
 
 To run the project with an AMPL-formatted ".dat" file:<br>
-```python3 blevp2nlp.py [path to AMPL executable] [path to '.dat' file]```
+```python3 blevp2nlp.py -d [path to '.dat' file]```
+
+For instance:<br>
+```python3 blevp2nlp.py -d tests/test_pb_4.dat```
 
 Solver statuses according to the [AMPL book](https://ampl.com/wp-content/uploads/Chapter-14-Interactions-with-Solvers-AMPL-Book.pdf):
 
