@@ -6,10 +6,6 @@ import numpy as np
 import amplpy
 from amplpy import AMPL, Environment
 
-### ADD PATH TO FOLDER CONTAINING AMPL EXECUTABLE ###
-ampl_path = "???"
-#####################################################
-
 model_path = "blevp2nlp.mod"
 
 class ALGERROR(Exception):
@@ -26,7 +22,7 @@ def reformulate_LBP(solver='baron',
     model_path: path to AMPL model (.mod file)
     '''
 
-    ampl = AMPL(Environment(ampl_path))
+    ampl = AMPL(Environment())
     ampl.option["solver"] = solver
 
     output_handler = amplpy.OutputHandler()
@@ -46,7 +42,15 @@ def reformulate_LBP(solver='baron',
 
     ampl.solve()
     status = ampl.get_value("solve_result")
-    print("SOLVER STATUS:",status)
+    status_convert = {
+        "solved":"OPTIMAL",
+        "solved?":"OPTIMAL",
+        "infeasible":"INFEASIBLE",
+        "unbounded":"UNBOUNDED",
+        "limit":"LIMIT",
+        "failure":"ALGERROR"
+    }
+    print("SOLVER STATUS:",status_convert[status])
     if status == "solved":
         if testing:
             out_file = os.path.join("output",os.path.splitext(os.path.basename(data_path))[0]+".sol")
